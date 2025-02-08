@@ -14,59 +14,67 @@
   <div class="container">
     <form id="cont-form" action="#">
       <h2>Contact Us</h2>
-      
 
-        <!-- Nombres -->
-        <div class="form-group">
-          <label for="nombre">Nombres*</label>
-          <input type="text" id="nombre" required>
-          
-        </div>
-        
-        <!-- Apellidos -->
-        <div class="form-group">
-          <label for="apellido">Apellidos*</label>
-          <input type="text" id="apellido" required>
-          
-        </div>
 
-        <!-- Email -->
-        <div class="form-group">
-          <label for="email">Correo electrónico*</label>
-          <input type="email" id="email" required>
-          
-        </div>
+      <!-- Nombres -->
+      <div class="form-group">
+        <label for="nombre">Nombres*</label>
+        <input type="text" id="nombre" required>
 
-        <!-- Tipo de consulta -->
-       <div class="form-group">
-          <label for="consulta">Tipo de consulta:</label>
-          <div class="radio-options">
+      </div>
+
+      <!-- Apellidos -->
+      <div class="form-group">
+        <label for="apellido">Apellidos*</label>
+        <input type="text" id="apellido" required>
+
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Correo electrónico*</label>
+        <input type="email" id="email" required>
+
+      </div>
+
+      <!-- Tipo de consulta -->
+
+      <div class="form-group">
+        <label for="consulta">Tipo de consulta:</label>
+        <div class="radio-options">
+
+
           <input type="radio" id="general" name="consulta" value="general" required>
-          <label for="general">Consulta general</label>
+          <label for="general">
+            <p>Consulta&nbsp;General</p>
+          </label>
 
           <input type="radio" id="soporte" name="consulta" value="soporte" required>
-          <label for="soporte">Solicitud de soporte</label>
+          <label for="soporte">
+            <p>Solicitud&nbsp;de&nbsp;soporte</p>
+          </label>
         </div>
-        
-  </div> 
- 
-  
 
-  <!-- Mensaje -->
-  <div class="form-group">
-    <label for="mensaje">Mensaje*</label>
-    <textarea id="mensaje" rows="4" required></textarea>
-  </div>
 
-  <!-- Consentimiento -->
-  <div class="form-group">
-    <label>
-      <input type="checkbox" id="consentimiento" required>
-      Autorizo ser contactado por el equipo*
-    </label>
-    <span class="error-message"></span>
-  </div>
-  <button type="submit">Enviar</button>
+      </div>
+
+
+
+      <!-- Mensaje -->
+      <div class="form-group">
+        <label for="mensaje">Mensaje*</label>
+        <textarea id="mensaje" rows="4" required></textarea>
+      </div>
+
+      <!-- Consentimiento -->
+      <div>
+        <div class="GrupAuto">
+          <input type="checkbox" id="autorizacion" required>
+          <option value="autorizado">Autorizo ser contactado por el equipo*</option>
+        </div>
+      </div>
+
+      <button type="submit">Enviar</button>
   </div>
   </form>
   </form>

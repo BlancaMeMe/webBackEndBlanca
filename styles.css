@@ -37,33 +37,31 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 600px;
-    height: 600px;
-    min-height: 200px;
-    overflow: hidden;
-    line-height: 0.60;
+    max-width: 600px;
      }
      
    /* ===== Estilos del los botones de opcion  ===== */
    .radio-options {
     display: flex;
-    margin-bottom: 20px;
-    gap: 10px; /* Espacio entre las opciones */
-    border: none; /* Sin bordes */
-      background-color: transparent;/* Fondo transparente */
-      padding: 10px;
-   
-  }
-  .radio-options input {
-    margin-right: 5px; /* Espacio entre el input y el texto */
-    transform: scale(0.30); 
+    align-items: center;
+    margin-bottom: 30px;
+    width: 40%;
+    gap: 30px; /* Espacio entre las opciones */
+    padding: 12px;
+    
 
   }
+  .radio-options input {
+    margin-left: 50px; /* Espacio entre el input y el texto */
+  }
+  
   
   /* ===== Estilos del formulario ===== */
   form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding: 12px;
   }
   
   label {
@@ -75,18 +73,24 @@
     width: 100%;
     padding: 0.75rem;
     border: 1px solid var(--gray-medium);
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 1rem;
   }
-  label {
-    font-size: 1rem;  /* Cambia el tamaño de la fuente de los labels */
-}
   
   input:focus, textarea:focus {
     border-color: var(--green-medium);
     outline: none;
     box-shadow: 0 0 5px var(--red);
   }
+
+  .GrupAuto {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    gap: 10px;
+  }
+  
   
   /* ===== Mensajes de error ===== */
   .error-message {
@@ -95,6 +99,7 @@
     
   }
   
+
   /* ===== Botón de envío ===== */
   button {
     background-color: var(--green-medium);
